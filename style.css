@@ -1,0 +1,908 @@
+@charset "utf-8";
+
+
+/*===== Laptop, Desktop ===== */
+
+
+
+@media (min-width: 993px) {
+    body {
+        background-color: ghostwhite;
+        font-size: 100%;
+    }
+
+    h1, h2, h3, h4, h5, h6, a, span, p, label, input, form, textarea, div {
+        font-family: Montserrat, serif;
+    }
+
+    p, span {
+        font-size: 125%;
+    }
+
+    /*===== Navbar ==== */
+
+    .nav-item .drop {
+        visibility: hidden;
+    }
+
+    .nav-item:hover .drop {
+        visibility: visible;
+        display: block;
+    }
+
+    .drop {
+        position: absolute;
+    }
+
+    .drop .list-group-item {
+        background-color: #212529;
+        color: rgba(255,255,255,.5);
+    }
+
+    /*===== Logo ====*/
+
+    .logo {
+        width: 80%;
+        margin-top: 60px;
+    }
+
+    .logo-div {
+        display: block;
+        text-align: center;
+    }
+
+    /*===== Présentation ====*/
+    .about {
+        background-color: white;
+        text-align: center;
+
+        padding-bottom: 60px;
+        padding-top: 50px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+
+    .about p {
+        margin-top: 20px;
+        max-width: 1300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /*==== Newsletter ==== */
+
+    .newsletter {
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: baseline;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .newsletter h3 {
+        margin-right: 30px
+    }
+
+
+    /*===== Carousel ====*/
+
+    .carousel-figure {
+        background-color: #212529;
+    }
+
+    .carousel-figure .card-group {
+        margin-left: 200px;
+        margin-right: 200px;
+        margin-bottom: 80px;
+    }
+
+    .carousel-figure .card {
+        min-height: 250px;
+        align-items: center;
+    }
+
+    .figure-caption {
+        position: static;
+    }
+
+    .Centerize {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .card-text {
+        margin-left: 40px;
+        margin-right: 40px;
+        flex-basis: content;
+
+    }
+
+    .figure h5 {
+        color: red;
+        font-size: 3.2em;
+    }
+
+
+    .carousel-figure {
+        background-color: dimgrey;
+    }
+
+
+    /*===== Solution ====*/
+
+    .solution {
+        background-color: white;
+        padding-top: 30px;
+        align-items: center;
+    }
+
+    .dev-img {
+        width: 100%;
+        padding-right: 40px;
+    }
+
+    .parions-web {
+        vertical-align: middle;
+    }
+
+    .parions-web h2 {
+        margin-bottom: 25px;
+    }
+
+
+    /*===== Programme ====*/
+
+    .programme_title {
+        text-align: center;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .programme .row {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .programme .row h2 {
+        text-align: left;
+        margin-bottom: 15px;
+    }
+
+    .programme img {
+        width: 30%;
+    }
+
+    .div-img-txt {
+        background-color: white;
+        padding-right: 350px;
+        align-items: center;
+    }
+
+    .div-txt-img {
+        padding-left: 350px;
+        align-items: center;
+    }
+
+    .div-img-left {
+        text-align: right;
+    }
+
+    .div-img-right {
+        text-align: left;
+    }
+
+    .div-txt {
+        vertical-align: middle;
+    }
+
+
+    /*=== Equipe === */
+
+
+    .team {
+        margin-top: 80px;
+    }
+
+    .toggleTeam {
+        position: relative;
+        text-align: center;
+        margin-top: 80px;
+
+    }
+
+
+    .teamPicture {
+        width: 100%;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+
+    .teamPicture_description {
+        position: absolute;
+        text-align: center;
+        border-radius: 50%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #212529;
+        color: #fff;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .teamPicture_description p {
+        top: 15%;
+        width : 70%;
+        height : 70%;
+        max-width : 70%;
+        max-height : 70%;
+        margin : 0;
+        padding : 0;
+        position : relative;
+        left : 15%;
+        display: none;
+    }
+    /*
+    .toggleTeam:hover .teamPicture{
+        visibility: hidden;
+    }
+
+    .toggleTeam:hover .teamPicture_description {
+        visibility: visible;
+        opacity: 0.5;
+    }
+    */
+
+    /*==== Notre histoire ===*/
+
+    .story {
+        background-color: white;
+        text-align: center;
+        padding-bottom: 80px;
+        padding-top: 50px;
+    }
+
+    .story p {
+        margin-top: 30px;
+        max-width: 850px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+    /*=== Contact ===*/
+
+    .contact {
+        margin-bottom: 30px;
+    }
+
+    .card-header {
+        background-color: #212529;
+    }
+
+    textarea.form-control {
+        height: 105px;
+    }
+
+    .social-media {
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+
+    .social-media i {
+        margin-left: 80px;
+        color: #212529;
+
+    }
+
+
+    /*===== Soutiens ===*/
+
+    .soutiens {
+        margin-bottom: 80px;
+    }
+
+    .soutiens .container {
+        text-align: center;
+
+    }
+
+    .soutiens h2 {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+
+    /*===== Footer ====*/
+
+    footer {
+        background-color: #212529;
+        color: white;
+        font-size: 1em;
+        padding-bottom: 40px;
+    }
+
+    footer a {
+        color: white;
+    }
+
+    footer div{
+        text-align: center;
+    }
+
+    .list-inline-item {
+        vertical-align: middle;
+        color: white;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+    }
+}
+
+
+/*========== 720px - 929px Tablettes ====*/
+
+
+@media (min-width: 720px) and (max-width: 992px){
+    body {
+        background-color: ghostwhite;
+        font-size: 100%;
+    }
+
+    h1, h2, h3, h4, h5, h6, a, span, p, label, input, form, textarea, div {
+        font-family: Montserrat, serif;
+    }
+
+
+    /*===== Navbar ==== */
+
+    .nav-item .drop {
+        display: none;
+    }
+
+    /*===== Logo ====*/
+
+    .logo {
+        width: 80%;
+        margin-top: 60px;
+    }
+
+    .logo-div {
+        display: block;
+        text-align: center;
+    }
+
+    /*===== Présentation ====*/
+    .about {
+        background-color: white;
+        text-align: center;
+
+        padding-bottom: 60px;
+        padding-top: 50px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+
+    .about p {
+        margin-top: 20px;
+        max-width: 1175px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /*==== Newsletter ==== */
+
+    .newsletter {
+        background-color: white;
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: baseline;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .newsletter h3 {
+        text-align: center;
+        margin-right: 30px;
+    }
+
+
+    /*===== Carousel ====*/
+    .carousel {
+        display: none;
+    }
+
+    /*===== Solution ====*/
+
+    .solution {
+        padding-top: 30px;
+        padding-left: -200px;
+        align-items: center;
+    }
+
+    .dev-img {
+        width: 100%;
+        padding-right: 40px;
+    }
+
+    .parions-web h2 {
+        margin-bottom: 25px;
+    }
+
+
+    /*===== Programme ====*/
+
+    .programme_title {
+        background-color: white;
+        text-align: center;
+        padding-bottom: 60px;
+        padding-top: 60px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .programme .row {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .programme .row h2 {
+        text-align: left;
+        margin-bottom: 15px;
+    }
+
+    .programme img {
+        width: 30%;
+    }
+
+    .div-img-txt {
+        align-items: center;
+    }
+
+    .div-txt-img {
+        background-color: white;
+        align-items: center;
+    }
+
+    .div-img-left {
+        text-align: right;
+    }
+
+    .div-img-right {
+        text-align: left;
+    }
+
+    .div-txt {
+        vertical-align: middle;
+    }
+
+
+    /*=== Equipe === */
+
+
+    .team {
+        margin-top: 80px;
+    }
+
+    .toggleTeam {
+        position: relative;
+        text-align: center;
+        margin-top: 80px;
+
+    }
+
+
+    .teamPicture {
+        width: 100%;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+
+    .teamPicture_description {
+        position: absolute;
+        text-align: center;
+        border-radius: 50%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #212529;
+        color: #fff;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .teamPicture_description p {
+        display: none;
+    }
+
+
+    /*==== Notre histoire ===*/
+
+    .story {
+        background-color: white;
+        text-align: center;
+        padding-bottom: 80px;
+        padding-top: 50px;
+    }
+
+    .story p {
+        margin-top: 30px;
+        max-width: 850px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+    /*=== Contact ===*/
+
+    .contact {
+        margin-bottom: 30px;
+    }
+
+    .card-header {
+        background-color: #212529;
+    }
+
+    textarea.form-control {
+        height: 105px;
+    }
+
+    .social-media {
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+
+    .social-media i {
+        margin-left: 80px;
+        color: #212529;
+
+    }
+
+
+    /*===== Soutiens ===*/
+
+    .soutiens {
+        margin-bottom: 80px;
+    }
+
+    .soutiens .container {
+        text-align: center;
+
+    }
+
+    .soutiens h2 {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+
+    /*===== Footer ====*/
+
+    footer {
+        background-color: #212529;
+        color: white;
+        font-size: 1em;
+        padding-bottom: 40px;
+    }
+
+    footer a {
+        color: white;
+    }
+
+    footer div {
+        text-align: center;
+    }
+
+    .list-inline-item {
+        vertical-align: middle;
+        color: white;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+    }
+}
+
+
+/*===== Moins de 719px: Smartphones =======*/
+
+@media (max-width: 719px) {
+    body {
+        background-color: ghostwhite;
+        font-size: 100%;
+    }
+
+    h1, h2, h3, h4, h5, h6, a, span, p, label, input, form, textarea, div {
+        font-family: Montserrat, serif;
+    }
+
+
+    /*===== Navbar ==== */
+
+    .nav-item .drop {
+        display: none;
+    }
+
+    /*===== Logo ====*/
+
+    .logo {
+        width: 80%;
+        margin-top: 60px;
+        padding-bottom: 40px;
+    }
+
+    .logo-div {
+        display: block;
+        text-align: center;
+    }
+
+    /*===== Présentation ====*/
+    .about {
+        background-color: white;
+        text-align: center;
+
+        padding-bottom: 60px;
+        padding-top: 50px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+
+    .about p {
+        margin-top: 20px;
+        max-width: 1175px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /*==== Newsletter ==== */
+
+    .newsletter {
+        background-color: white;
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: baseline;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .newsletter h3 {
+        text-align: center;
+        margin-right: 30px;
+    }
+
+
+    /*===== Carousel ====*/
+    .carousel {
+        display: none;
+    }
+
+    /*===== Solution ====*/
+
+    .solution {
+        padding-top: 30px;
+        padding-left: -200px;
+        align-items: center;
+    }
+
+    .dev-img {
+        width: 100%;
+        padding-right: 40px;
+    }
+
+    .parions-web h2 {
+        margin-bottom: 25px;
+    }
+
+
+    /*===== Programme ====*/
+
+    .programme_title {
+        background-color: white;
+        text-align: center;
+        padding-bottom: 60px;
+        padding-top: 60px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .programme .row {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .programme .row h2 {
+        text-align: left;
+        margin-bottom: 15px;
+    }
+
+    .programme img {
+        width: 40%;
+    }
+
+    .div-img-txt {
+        align-items: center;
+    }
+
+    .div-txt-img {
+        background-color: white;
+        align-items: center;
+    }
+
+    .div-img-left {
+        text-align: center;
+    }
+
+    .div-img-right {
+        text-align: center;
+    }
+
+    .div-txt {
+        vertical-align: middle;
+    }
+
+
+    /*=== Equipe === */
+
+
+    .team {
+        margin-top: 80px;
+    }
+
+    .toggleTeam {
+        position: relative;
+        text-align: center;
+        margin-top: 80px;
+
+    }
+
+
+    .teamPicture {
+        width: 100%;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+
+    .teamPicture_description {
+        position: absolute;
+        text-align: center;
+        border-radius: 50%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #212529;
+        color: #fff;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .teamPicture_description p {
+        display: none;
+    }
+
+
+    /*==== Notre histoire ===*/
+
+    .story {
+        background-color: white;
+        text-align: center;
+        padding-bottom: 80px;
+        padding-top: 50px;
+    }
+
+    .story p {
+        margin-top: 30px;
+        max-width: 850px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+    /*=== Contact ===*/
+
+    .contact {
+        margin-bottom: 30px;
+    }
+
+    .card-header {
+        background-color: #212529;
+    }
+
+    textarea.form-control {
+        height: 105px;
+    }
+
+    .social-media {
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+
+    .social-media i {
+        margin-left: 80px;
+        color: #212529;
+
+    }
+
+
+    /*===== Soutiens ===*/
+
+    .soutiens {
+        margin-bottom: 80px;
+    }
+
+    .soutiens .container {
+        text-align: center;
+
+    }
+
+    .soutiens h2 {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+
+    /*===== Footer ====*/
+
+    footer {
+        background-color: #212529;
+        color: white;
+        font-size: 1em;
+        padding-bottom: 40px;
+    }
+
+    footer a {
+        color: white;
+    }
+
+    footer div {
+        text-align: center;
+    }
+
+    .list-inline-item {
+        vertical-align: middle;
+        color: white;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+    }
+}

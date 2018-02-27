@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
+          integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <<link href="https://use.fontawesome.com/releases/v5.0.3/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?version=33">
+    <title>CodePhenix - Libérer par le code</title>
+</head>
+<body>
+
+
+    <div id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <!---
+            <a class="navbar-brand" href="#">CodePhenix</a>
+            --->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Accueil</a>
+                        <ul class="list-group list-group-flush drop navbar-nav">
+                            <li><a class="list-group-item" href="index.html#about">A propos</a></li>
+                            <li><a class="list-group-item" href="index.html#carouselIndicators">La situation carcérale</a></li>
+                            <li><a class="list-group-item" href="index.html#programme">Notre solution</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="equipe.html" id="navbarDropdownTeam">
+                            Qui sommes nous?
+                        </a>
+                        <ul class="list-group list-group-flush drop navbar-nav">
+                            <li><a class="list-group-item nav-link" href="#history">Notre Histoire</a></li>
+                            <li><a class="list-group-item nav-link" href="#team">L'équipe</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-form">Contactez-nous</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#soutiens">Nos soutiens</a>
+                    </li>
+
+                    <!---
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    --->
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+    <!--- logo --->
+    <div class="logo-div">
+        <img class="logo" alt="logo CodePhenix" src="images/logo.png"/>
+    </div>
+
+
+
+    <!--- Notre Histoire --->
+
+    <div class="about" id="history">
+        <h2>Notre Histoire</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at molestie orci. Pellentesque eu magna in
+            diam faucibus egestas. Quisque vehicula egestas nibh at gravida. Morbi blandit lorem sed sem dignissim, et
+            tempor nisl hendrerit. Integer eget molestie metus, vel porta purus. Donec rutrum eget mi ac pellentesque
+            <br>
+            Sed nec felis eget turpis eleifend scelerisque. Curabitur efficitur mi a dui commodo consectetur. Proin
+            aliquam, urna sed porttitor efficitur, felis neque rutrum enim, vel rhoncus elit enim vitae diam. Donec
+            semper mi ac mollis facilisis.
+            </p>
+
+    </div>
+
+
+
+    <!--- Equipe --->
+
+    <div class="container team" id="team">
+        <h1 class="text-center">Notre Equipe</h1>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="toggleTeam">
+                    <img src="images/person1.jpg" class="teamPicture" alt="">
+                </div>
+                <p class="text-center">xxx</p>
+                <p class="text-center">Président</p>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="toggleTeam">
+                    <img src="images/person2.jpg" class="_gif arnaud teamPicture" alt="">
+                </div>
+                <p class="text-center">xxx</p>
+                <p class="text-center">Trésorier</p>
+            </div>
+
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="toggleTeam">
+                    <img src="images/person3.jpg" class="_gif arnaud teamPicture" alt="">
+                <p class="text-center">xxx</p>
+                <p class="text-center">Secrétaire Général</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="toggleTeam">
+                    <img src="images/person4.jpg" class="_gif arnaud teamPicture" alt="">
+                </div>
+                <p class="text-center">xxx</p>
+                <p class="text-center">Administrateur</p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--- Newsletter --->
+    <div class="newsletter">
+        <h3>Pour suivre notre actualité, abonnez-vous à la Newsletter</h3>
+        <div id="nl_results"></div>
+        <form id="nl_form" method="POST">
+            <div class="form-row align-items-center">
+                <div class="form-group col-auto">
+                    <input type="email" class="form-control" required name="nl_email" id="nl_email" placeholder="email@example.com">
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-danger mb-2">S'inscrire</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!--- Contact --->
+    <div class="card contact">
+        <div class="card-header text-white">
+            Nous contacter
+        </div>
+        <div id="contact_results"></div>
+        <div class="card-body">
+            <form class="px-4 py-3"  id="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="formName"><span>Votre nom*</span></label>
+                    <input type="text" class="form-control" required name="formName" id="formName">
+                </div>
+                <div class="form-group">
+                    <label for="formEmail"><span>Votre email*</span></label>
+                    <input type="email" class="form-control" required name="formEmail" id="formEmail" placeholder="email@example.com">
+
+                </div>
+                <div class="form-group">
+                    <label for="formMessage"><span>Votre message*</span></label>
+                    <textarea class="form-control" required name="formMessage" id="formMessage" placeholder="Message"></textarea>
+                </div>
+                <label>
+                    <span>&nbsp;</span><input type="submit" id="submit_btn" value="Envoyez" class="btn btn-secondary" />
+                </label>
+            </form>
+        </div>
+        <div class="card-footer bg-white social-media align-items-center">
+            <span>Ou rejoignez-nous sur les réseaux:</span>
+
+            <a href="#" target="_blank"><i class="fab fa-facebook fa-4x"> </i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter fa-4x"> </i></a>
+            <!--- linkedin
+                <li><a class="btn-floating btn-sm btn-li"><i class="fab fa-linkedin"> </i></a></li>
+             --->
+
+        </div>
+    </div>
+
+
+    <!--- Soutiens --->
+    <div class="soutiens" id="soutiens">
+        <h2>Pour leur soutien, un grand merci à</h2>
+        <div class="container">
+            <div class="row justify-content-around align-items-center">
+                <div class="col">
+                    <a href="#" target="_blank"><img src="images/work_1.jpg"></a>
+                </div>
+                <div class="col">
+                    <a href="#" target="_blank"><img src="images/work_7.jpg"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Footer-->
+    <footer>
+        <div class="container">
+            <div class="row footer align-items-center">
+                <div class="col-lg-3 col-md-3 col-s-6 col-xs-12">
+                    <span>Copyright © </span>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-s-12 col-xs-12 social">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#" target="_blank"><i class="fab fa-facebook fa-2x"> </i></a></li>
+                        <li class="list-inline-item"><a href="#" target="_blank"><i class="fab fa-twitter fa-2x"> </i></a></li>
+
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-s-12 col-xs-12"><a href=""><span></span></a></div>
+            </div>
+        </div>
+    </footer>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
+        integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous">
+
+</script>
+<script src="javascript/contact-form.js"></script>
+<script src="javascript/newsletter_sub.js"></script>
+</body>
+</html>

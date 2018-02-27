@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
+          integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.0.3/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?version=23">
+    <title>CodePhenix - Libérer par le code</title>
+</head>
+<body>
+
+    <div id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <!---
+            <a class="navbar-brand" href="#">CodePhenix</a>
+            --->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item active">
+                        <a href="index.html" class="nav-link">Accueil</a>
+                        <ul class="list-group list-group-flush drop navbar-nav">
+                            <li><a class="list-group-item" href="#about">A propos</a></li>
+                            <li><a class="list-group-item" href="#carouselIndicators">La situation carcérale</a></li>
+                            <li><a class="list-group-item" href="#programme">Notre solution</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="equipe.html" id="navbarDropdownTeam">
+                            Qui sommes nous?
+                        </a>
+                        <ul class="list-group list-group-flush drop navbar-nav">
+                            <li><a class="list-group-item nav-link" href="equipe.html#history">Notre Histoire</a></li>
+                            <li><a class="list-group-item nav-link" href="equipe.html#team">L'équipe</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-form">Contactez-nous</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#soutiens">Nos soutiens</a>
+                    </li>
+
+                    <!---
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    --->
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+<!--- logo --->
+    <div class="logo-div">
+        <img class="logo" alt="logo CodePhenix" src="images/logo.png"/>
+    </div>
+
+    <!--- Introduction --->
+    <div class="about" id="about">
+        <h1>Le droit à une deuxième chance</h1>
+        <p>Persuadée de droit de chacun à l'aide à la réinsertion, CodePhenix est une association qui ambitionne de remplacer le cercle viscieux de la récidive par un cercle vertueux axé sur la réinsertion
+            professionnelle.<br>
+            Pour cela, nous travaillons au lancement d'un programme de formation au métier de développeur web amenant des
+            personnes incarcérées de la détention à une situation professionnelle stable.
+        </p>
+
+
+    </div>
+
+    <!--- Newsletter --->
+    <div class="newsletter">
+        <h3>Pour suivre l'actualité de CodePhenix, abonnez-vous à notre Newsletter</h3>
+        <div id="nl_results"></div>
+        <form id="nl_form" method="POST">
+            <div class="form-row align-items-center">
+                <div class="form-group col-auto">
+                    <input type="email" class="form-control" required name="nl_email" id="nl_email" placeholder="email@example.com">
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-danger mb-2">S'inscrire</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+    <!--- Carousel chiffres récidive --->
+
+    <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner carousel-figure">
+            <div class="carousel-item active">
+                <div class="carousel-caption d-none d-md-block figure-caption">
+                    <h3>Que disent les chiffres sur la situation carcérale française?</h3>
+                </div>
+                <div class="card-group">
+                    <div class="card text-center">
+                        <div class="figure Centerize">
+                            <h5 class="card-title">63%</h5>
+                            <p>Taux de récidive à 5 ans</p>
+                        </div>
+                    </div>
+                    <div class="card text-center">
+                        <div class="Centerize">
+                            <p class="card-text">Ce chiffre particulièrement important reflète la quasi-fatalité de la
+                                récidive après une peine de prison ferme, malgré le droit de chacun
+                                à une deuxième chance.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-caption d-none d-md-block figure-caption">
+                    <h3>Que disent les chiffres sur la situation carcérale française?</h3>
+                </div>
+                <div class="card-group">
+                    <div class="card text-center figure">
+                        <div class="figure Centerize">
+                            <h5 class="card-title">113 %</h5>
+                            <p>Taux de surpopulation carcérale</p>
+                        </div>
+                    </div>
+                    <div class="card text-center">
+                        <div class="Centerize">
+                            <p class="card-text">
+                                La récidive et le recours massif à la prison ferme ont naturellement mené à une
+                                surpopulation grandissante, aggravant les conditions de détention des personnes condamnées ainsi
+                                que les conditions de travail des surveillants pénitentiaires.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-caption d-none d-md-block figure-caption">
+                    <h3>Que disent les chiffres sur la situation carcérale française?</h3>
+                </div>
+                <div class="card-group">
+                    <div class="card text-center figure">
+                        <div class="figure Centerize">
+                            <h5 class="card-title">47 000 €</h5>
+                            <p>Coût total de la peine d'un détenu récidiviste</p>
+                        </div>
+                    </div>
+                    <div class="card text-center">
+                        <div class="Centerize">
+                            <p class="card-text">
+                                Par ailleurs, la récidive constitue un coût important pour la société, tandis que la
+                                réinsertion mène le sortant de prison à participer de nouveau à l'économie du pays.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Précédent</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Suivant</span>
+        </a>
+    </div>
+
+    <!--- Notre Solution --->
+
+
+    <div class="container-fluid solution">
+        <div class="row">
+            <div class="col-lg-8">
+                <img class="dev-img img-responsive" src="images/dev.png" alt="developer screen">
+            </div>
+            <div class="col-lg-4 parions-web">
+                <h2>Les opportunités du numérique</h2>
+                <p>Le secteur du numérique souffre actuellement d’une pénurie de développeurs, avec 11 offres
+                    d’emploi par candidat en France, alors qu’une partie de ces postes requière des compétences
+                    pouvant être acquises en seulement quelques mois. Il s'agit d'ailleurs d'un phénomène qui va s'inscrire
+                    dans la durée puisqu'on estime qu'en France entre 50 et 130 000 postes ne seront pas pourvus en 2020. <br>Cela constitue une réelle opportunité pour les
+                    personnes éloignées de l'emploi qui peuvent profiter du changement de rapport de force entre demandeurs d'emploi et
+                    employeurs.
+                </p>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+
+    <!--- Programme de réinsertion --->
+    <div class="programme" id="programme">
+        <div class="programme_title">
+            <h2>Un programme de réinsertion en 3 phases</h2>
+        </div>
+        <div class="container-fluid">
+            <div class="row div-img-txt">
+                <div class="col-lg-7 col-md-7 col-sm-5 div-img-left">
+                    <img class="img-responsive" src="images/mortarboard.png" alt="Diplome">
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-7 div-txt">
+                    <h2>Formation</h2>
+                    <p>Pendant 6 mois, les apprenants reçoivent une formation aux langages nécessaires à
+                    l'exercice du métier de développeur front-end</p>
+                </div>
+            </div>
+            <div class="row div-txt-img">
+                <div class="col-lg-5 col-md-5 col-sm-7 div-txt">
+                    <h2>Application</h2>
+                    <p>Les 3 mois suivants, les participants
+                    au programme réalisent des missions rémunérées pour des entreprises extérieures</p>
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-5 div-img-right">
+                    <img class="img-responsive" src="images/programming.png" alt="developer">
+                </div>
+            </div>
+            <div class="row div-img-txt">
+                <div class="col-lg-7 col-md-7 col-sm-5 div-img-left">
+                    <img class="img-responsive" src="images/charity.png" alt="developer screen">
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-7 div-txt">
+                    <h2>Accompagnement</h2>
+                    <p> Après la libération, nous accompagnons nos apprenants jusqu'au réemploi en
+                    mettant en relation avec des acteurs du secteur du numérique, des associations
+                    spécialisées et entreprises sensiblisées.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--- Contact --->
+    <div class="card contact">
+        <div class="card-header text-white">
+            Nous contacter
+        </div>
+        <div id="contact_results"></div>
+        <div class="card-body">
+            <form class="px-4 py-3"  id="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="formName"><span>Votre nom*</span></label>
+                        <input type="text" class="form-control" required name="formName" id="formName">
+                </div>
+                <div class="form-group">
+                    <label for="formEmail"><span>Votre email*</span></label>
+                        <input type="email" class="form-control" required name="formEmail" id="formEmail" placeholder="email@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="formMessage"><span>Votre message*</span></label>
+                        <textarea class="form-control" required name="formMessage" id="formMessage" placeholder="Message"></textarea>
+                </div>
+                <label>
+                    <span>&nbsp;</span><input type="submit" id="submit_btn" value="Envoyez" class="btn btn-secondary" />
+                </label>
+            </form>
+        </div>
+        <div class="card-footer bg-white social-media align-items-center">
+            <span>Ou rejoignez-nous sur les réseaux:</span>
+
+            <a href="https://www.facebook.com/CodePhenix" target="_blank"><i class="fab fa-facebook fa-4x"> </i></a>
+            <a href="https://twitter.com/CodePhenix" target="_blank"><i class="fab fa-twitter fa-4x"> </i></a>
+            <!--- linkedin
+                <li><a class="btn-floating btn-sm btn-li"><i class="fab fa-linkedin"> </i></a></li>
+             --->
+
+        </div>
+    </div>
+
+
+    <!--- Soutiens --->
+    <div class="soutiens" id="soutiens">
+        <h2>Pour leur soutien, un grand merci à</h2>
+        <div class="container">
+            <div class="row justify-content-around align-items-center">
+                <div class="col">
+                    <a href="#" target="_blank"><img src="images/work_1.jpg"></a>
+                </div>
+                <div class="col">
+                    <a href="#" target="_blank"><img src="images/work_7.jpg"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Footer-->
+    <footer>
+        <div class="container">
+            <div class="row footer align-items-center">
+                <div class="col-lg-3 col-md-3 col-s-6 col-xs-12">
+                    <span>Copyright © </span>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-s-12 col-xs-12 social">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#" target="_blank"><i class="fab fa-facebook fa-2x"> </i></a></li>
+                        <li class="list-inline-item"><a href="#" target="_blank"><i class="fab fa-twitter fa-2x"> </i></a></li>
+
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-s-12 col-xs-12"><a href=""><span></span></a></div>
+            </div>
+        </div>
+    </footer>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
+        integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous">
+
+</script>
+<script src="javascript/contact-form.js"></script>
+<script src="javascript/newsletter_sub.js"></script>
+</body>
+</html>
